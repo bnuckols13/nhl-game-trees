@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How NHL GPPs Are Won — Measured History</title>
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<div class="wrap">
+
+<a class="backlink" href="index.html">&larr; NHL slates</a>
+
+<div class="hd">
+<div class="kick">NHL &middot; standing reference &middot; research memo 26</div>
+<h1>Winning an 11-game NHL Main takes about 242 points, and the winner is built the same way at every slate size</h1>
+<div class="sub">Measured, not estimated: 292 FanDuel GPP fields pulled lineup by lineup across 227 slates, from the 381 completed Main slates STAT-API carries for 2024-25 through 2026-27 to date. Its contest archive covers 242 of those slates, and the three fields the desk first measured by hand reproduce to the tenth inside this pipeline, so the method checks against itself.</div>
+</div>
+
+<h2>Winning scores by slate size <span>&mdash; median, with the middle half in brackets</span></h2>
+<table>
+<tr><th>Games</th><th class="num">Fields</th><th class="num">Winning score</th><th class="num">Top 1% cut</th><th class="num">Median entry</th></tr>
+<tr><td>4</td><td class="num">49</td><td class="num">226.3 [212.3 to 242.0]</td><td class="num">196.1 [185.6 to 207.2]</td><td class="num">117.5</td></tr>
+<tr><td>9</td><td class="num">18</td><td class="num">211.8 [194.3 to 224.2]</td><td class="num">190.7 [175.6 to 192.9]</td><td class="num">112.9</td></tr>
+<tr><td>10</td><td class="num">43</td><td class="num">234.1 [218.8 to 245.6]</td><td class="num">194.2 [185.8 to 207.7]</td><td class="num">116.2</td></tr>
+<tr><td>11</td><td class="num">16</td><td class="num">241.8 [219.8 to 252.8]</td><td class="num">192.2 [185.2 to 210.0]</td><td class="num">111.7</td></tr>
+<tr><td>13</td><td class="num">5</td><td class="num">237.2 [222.8 to 244.4]</td><td class="num">192.4 [192.4 to 194.8]</td><td class="num">103.4</td></tr>
+<tr><td>14</td><td class="num">6</td><td class="num">262.8 [242.8 to 272.8]</td><td class="num">206.5 [195.1 to 221.8]</td><td class="num">122.7</td></tr>
+</table>
+<p class="small">The 11-game line, stated fully: winners run 207.3 to 295.0 across the 16 fields, and the top 1% cut averages 200.4 with a range of 172.0 to 242.7. Ten-to-twelve game slates corroborate with 70 fields. There is a direct twin for a big Tuesday slate: the October 27, 2026 $20K Breakaway ran on 11 games with a 5,362-entry field, and it took 239.3 to win and 193.0 for the top 1%.</p>
+
+<h2>The winner's anatomy <span>&mdash; stable across the whole sample, n 292 winners</span></h2>
+<table>
+<tr><th>Piece</th><th class="num">p25</th><th class="num">Median</th><th class="num">p75</th></tr>
+<tr><td>Players at 20+ points</td><td class="num"></td><td class="num">6</td><td class="num"></td></tr>
+<tr><td>Players at 30+ points</td><td class="num"></td><td class="num">3</td><td class="num"></td></tr>
+<tr><td>Goalie points</td><td class="num">24.0</td><td class="num">28.8</td><td class="num">35.2</td></tr>
+<tr><td>Salary used, of $55,000</td><td class="num">$54,700</td><td class="num">$54,900</td><td class="num">$55,000</td></tr>
+<tr><td>Largest team stack</td><td class="num"></td><td class="num">4, the cap</td><td class="num"></td></tr>
+</table>
+<div class="note">Ninety-six percent of winners hold at least four players at 20 or more. And in 280 winners whose lineups could be classified, the biggest stack was the team playing against the winner's own goalie zero times: 29% of the time the stack was the goalie's own team, and the rest of the time it came from a different game entirely. Nobody wins these by stacking skaters into their own goalie.</div>
+
+<h2>What field size explains, and what it does not</h2>
+<p style="font-size:14.5px;line-height:1.6">Field size is real but modest: the correlation between log field size and the winning score is 0.34, worth about 18.2 points per tenfold increase in entries, and slate size adds about 3.3 points per game. Together they explain under a quarter of the variance (R&sup2; 0.234). Most of what moves a winning score is the night's scoring environment, which no pre-slate number fully sees. That is why each slate page prices its games as distributions and scripts, not as point forecasts.</p>
+
+<h2>Min cash, by contest type <span>&mdash; fields of 500 or more</span></h2>
+<table>
+<tr><th>Contest</th><th class="num">Fields</th><th class="num">Min-cash score</th><th class="num">Share paid</th></tr>
+<tr><td>Breakaway</td><td class="num">177</td><td class="num">135.4</td><td class="num">23.2%</td></tr>
+<tr><td>Five Hole</td><td class="num">45</td><td class="num">134.3</td><td class="num">30.1%</td></tr>
+<tr><td>Deflection</td><td class="num">40</td><td class="num">138.2</td><td class="num">30.2%</td></tr>
+</table>
+<p class="small">Min cash runs at about 60.5% of the winning score, closer to the top 5% cut than to the median entry (about 114). Cashing is a real finish, not a coin flip off the median.</p>
+
+<div class="foot"><b>Caveats, printed with the numbers.</b> The archive is sampled: 139 of the 381 slates carry no contests in the API, so this is the population of retrievable fields, not of all fields ever run. Playoff slates sit inside the season windows. The lineups endpoint caps at 10,000 rows per contest, which affects 18 contests; winners, cuts and min-cash stay exact there, and medians are read by rank position. Twelve winners could not be classified for the stack-versus-goalie test. Source dataset: nhl_gpp_history.csv, kept with the desk's research files.</div>
+
+</div>
+</body>
+</html>

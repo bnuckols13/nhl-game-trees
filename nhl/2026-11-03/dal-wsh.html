@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dallas at Washington — Game Tree, Grind Pass</title>
+<link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+<div class="wrap">
+
+<a class="backlink" href="index.html">&larr; Slate index, November 3, 2026</a>
+
+<div class="hd">
+<div class="kick">Game tree &middot; grind pass &middot; goalies, punts, one convex look</div>
+<h1>The quietest game on the slate holds one of its two core goalie leaves, and his ceiling is a shutout, not saves</h1>
+<div class="sub">Puck drop 7:00 PM ET. Total 5.5, a pick'em at minus 110 both ways. Implied goals: 2.75 each. Dallas owns the slate's most extreme suppression line, 2.14 goals against per game on 22.3 shots against, which is the whole story of this page. Built at grind depth: goal distributions are Poisson at the market means, goalie branches are a coarse Monte Carlo whose levels run upper-leaning, so trust the rankings over the point values.</div>
+</div>
+
+<h2>Level 1 &middot; How many goals, and the scripts that matter</h2>
+<table>
+<tr><th>Team</th><th class="num">Scores 4+</th><th class="num">Scores 5+</th><th>Note</th></tr>
+<tr><td><b>Dallas</b></td><td class="num">29.7%</td><td class="num">14.5%</td><td>Has scored 5 or more twice in 13 parsed games; there is no rout branch to buy</td></tr>
+<tr><td><b>Washington</b></td><td class="num">29.7%</td><td class="num">14.5%</td><td>Faces the league's best penalty kill, 93.6%, with a 17.6% power play</td></tr>
+</table>
+<div class="script"><div class="top"><div class="p">35.8%</div><div class="nm">The grind, total 4 or fewer</div></div><div class="pays">The centre of mass. <span class="dim">Neither power play is a path into a boom: Dallas kills at 93.6%, first in the league.</span></div><div class="pbar"><i style="width:35.8%"></i></div></div>
+<div class="script"><div class="top"><div class="p">18.5%</div><div class="nm">Close high total</div></div><div class="pays">The only version runs through Dallas's power play against Washington's 77.3% kill, <span class="dim">the game's single special-teams edge.</span></div><div class="pbar"><i style="width:18.5%"></i></div></div>
+<div class="script"><div class="top"><div class="p">8.7%</div><div class="nm">Routs, each way</div></div><div class="pays">Priced the same in both directions and supported in neither record. <span class="dim">No leaf buys them.</span></div><div class="pbar"><i style="width:8.7%"></i></div></div>
+
+<h2>Goalies <span>&mdash; one core leaf and a clear second</span></h2>
+<table>
+<tr><th>Goalie</th><th class="num">Mean</th><th class="num">P(20+)</th><th class="num">P(28.8+)</th><th>Status</th></tr>
+<tr><td><b>Oettinger (DAL, $7,400)</b></td><td class="num">16.4</td><td class="num"><b>.417</b></td><td class="num">.166</td><td><span class="tier live">Confirmed</span></td></tr>
+<tr><td>Thompson (WSH, $7,500)</td><td class="num">14.5</td><td class="num">.374</td><td class="num">.125</td><td><span class="tier live">Confirmed</span></td></tr>
+</table>
+<p class="small">Oettinger has the best winner-goalie probability of the four true 5.5-total games after Montreal's Fowler: a 16.6% chance of reaching the 28.8 the median GPP winner gets from his goalie. His ceiling is suppression, not volume. He has allowed 1.64 goals a game with three shutouts in eleven starts, but faces only 19.2 saves a night because Dallas allows 22.3 shots, so a 28.8 night for him is specifically a shutout or a one-goal win, which is exactly the shape his season keeps producing. Thompson faces the lower shot rate with the same win probability and is strictly the second goalie in this game.</p>
+
+<h2>The leaves</h2>
+<details><summary><b>GL-2 &middot; Oettinger, goalie-first</b><span class="tier core">CORE</span></summary><div class="leafbody">One of the two core goalie leaves across the six grind and secondary games, with Montreal's Fowler. Oettinger plus punt defensemen, skaters imported from the stack games. A lineup that takes its goalie here is buying the shutout shape at a pick'em price.</div></details>
+<details><summary><b>Punts &middot; floors with the shortest 20+ paths</b><span class="tier">SALARY RELIEF</span></summary><div class="leafbody">Thomas Harley (DAL, $4,900): 6.00 points a game from shots and blocks, with half a point a game and power play points on top; the best punt in the game because his 20+ path, one point plus a normal night, is the shortest. Esa Lindell (DAL, $4,200): 5.01 a game, 2.16 blocks a night. Aliaksei Protas (WSH, $4,200): a forward punt with real scoring, 0.64 points a game and 10.4 FanDuel points a game pooled, on Washington's first line. Martin Fehervary (WSH, $3,900) at 4.88 a game and Matt Roy (WSH, $3,600) at 4.76 complete the set.</div></details>
+<details><summary><b>Convex boom</b><span class="tier">NONE</span></summary><div class="leafbody">No dedicated entry. One note for the construction pass rather than this page: Dallas's power play forwards carry the slate's richest power play point rates, about half a point a game each for Robertson, Johnston and Rantanen, so if a Dallas piece belongs anywhere it is as stack material, not as a punt-tier leaf.</div></details>
+
+<div class="foot"><b>What this game must give a top 1% lineup:</b> the goalie slot, bought as a shutout shape, and the slate's best punt defenseman. Nothing more is asked of it (bar: <a href="../history.html">192 for the top 1%, about 242 to win</a>). <b>T-60 items:</b> both starter flags, both expected to confirm. No injury flags on either roster. Source: deep/14-trees-grind-games.md, with the 4:00 PM sweep (deep/15) applied.</div>
+
+</div>
+</body>
+</html>

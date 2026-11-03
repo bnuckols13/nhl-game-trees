@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Minnesota at Philadelphia — Game Tree, Grind Pass</title>
+<link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+<div class="wrap">
+
+<a class="backlink" href="index.html">&larr; Slate index, November 3, 2026</a>
+
+<div class="hd">
+<div class="kick">Game tree &middot; grind pass &middot; the one low-total game with a real boom inside it</div>
+<h1>A 5.5 game with a stack-grade unit inside it, and an underdog goalie who pays without winning</h1>
+<div class="sub">Puck drop 7:00 PM ET. Total 5.5. Implied goals: Minnesota 3.07, Philadelphia 2.43, the slate's second-lowest team number. Win probability, market: Minnesota 61.1%. Built at grind depth, with one exception: Minnesota's top unit shares goals at a rate no grind game is supposed to have, so it gets a full convex leaf below. Goal distributions are Poisson at the market means with the realized record beside them; goalie levels run upper-leaning.</div>
+</div>
+
+<h2>Level 1 &middot; How many goals, and the scripts that matter</h2>
+<table>
+<tr><th>Team</th><th class="num">Scores 4+, market</th><th class="num">Scores 4+, realized</th><th>Note</th></tr>
+<tr><td><b>Minnesota</b></td><td class="num">36.8%</td><td class="num">43.8%</td><td>52 goals in 16 parsed games; its realized boom rate runs above its price</td></tr>
+<tr><td><b>Philadelphia</b></td><td class="num">22.8%</td><td class="num">13.3%</td><td>2.33 goals a game realized, worse than its price; the gap helps Wallstedt and hurts nobody the desk owns</td></tr>
+</table>
+<div class="script"><div class="top"><div class="p">36.8%</div><div class="nm">Minnesota scores 4 or more, any margin</div></div><div class="pays">The boom script, at a 5.5 total. <span class="dim">The one low-total script in the six grind games with stack-grade capture underneath it; the convex leaf prices the unit, not just the script.</span></div><div class="pbar"><i style="width:36.8%"></i></div></div>
+<div class="script"><div class="top"><div class="p">35.8%</div><div class="nm">The Wallstedt grind, total 4 or fewer</div></div><div class="pays">Philadelphia shoots a slate-low 23.3 a game, <span class="dim">so this path is a win plus low goals against, never saves.</span></div><div class="pbar"><i style="width:35.8%"></i></div></div>
+<div class="script"><div class="top"><div class="p">17.7%</div><div class="nm">Close high total</div></div><div class="pays">Needs Philadelphia's offence to be a team it has not been this season.</div><div class="pbar"><i style="width:17.7%"></i></div></div>
+<div class="script"><div class="top"><div class="p">inside 38.9%</div><div class="nm">The Philadelphia volume steal</div></div><div class="pays">Inside Philadelphia's win mass plus the high-save loss worlds: <span class="dim">Vladar's branch pays in losses too, which is the whole point of his leaf.</span></div><div class="pbar"><i class="v" style="width:38.9%"></i></div></div>
+
+<h2>Goalies</h2>
+<table>
+<tr><th>Goalie</th><th class="num">Mean</th><th class="num">P(20+)</th><th class="num">P(28.8+)</th><th>Status</th></tr>
+<tr><td><b>Vladar (PHI, $7,100)</b></td><td class="num">15.9</td><td class="num">.376</td><td class="num"><b>.173</b></td><td><span class="tier live">Confirmed</span></td></tr>
+<tr><td>Wallstedt (MIN, $7,700)</td><td class="num">15.4</td><td class="num"><b>.405</b></td><td class="num">.126</td><td><span class="tier live">Confirmed</span></td></tr>
+</table>
+<p class="small">Two different shapes. Wallstedt is the better 20+ probability, on real form, 2.07 goals against across his starts, but his ceiling is capped: Philadelphia's 23.3 shots a game starve the saves term, so his path to the 28.8 a winning lineup gets from its goalie is narrow, a shutout (8.8% at the market mean) or a one-goal win. Vladar, confirmed in the afternoon sweep with the Woll branch closed, has the highest winner-goalie probability of any underdog in the six games, 17.3%, at the joint-cheapest goalie price on the slate. His mechanism is volume: Minnesota shoots 30.8 a game and his measured rate is 25.1 saves a night, so a competitive loss, 30 or more saves with two or three against, still pays about 20, and a Philadelphia win at that volume pays 35 or more. The caution is printed with him: three wins and 3.25 goals against in his eight starts this season. The branch is a volume bet, not a form bet.</p>
+
+<h2>The leaves</h2>
+<details><summary><b>CX-1 &middot; Minnesota's top unit, the game's one boom entry</b><span class="tier">CONVEX BOOM</span></summary><div class="leafbody">Measured capture, this season's play-by-play: Kaprizov, Boldy and Quinn Hughes hold 43.0% of all Minnesota points across goal types and pay two or more members on 20 of 47 goals; the first line pays all three members on 4 of 32 even-strength goals, and the power play core holds 55.8% of power play points on a power play that produced 15 of Minnesota's 52 goals. The pairs are real: Eriksson Ek with Kaprizov 11 shared goals, Kaprizov with Boldy 11, Kaprizov with Hughes 10. The correlation lives on shared goals, and this unit demonstrably shares them. Two constructions under the four-per-team cap, which counts the goalie: the four skaters, Kaprizov ($8,000), Boldy ($7,300), Hughes ($6,900) and Eriksson Ek ($6,600), with the goalie slot spent elsewhere, Fowler pairing naturally from a different game; or Kaprizov, Boldy and Hughes with Wallstedt, dropping Eriksson Ek, when the lineup wants the Minnesota win correlation in the goalie slot instead. Never both, and never against Vladar.</div></details>
+<details><summary><b>GL-4 &middot; Goalie-first, both directions</b><span class="tier">GOALIE LEAF</span></summary><div class="leafbody">Wallstedt for lineups already holding Minnesota skaters under the cap. Vladar as the sprinkle goalie in Philadelphia-win worlds, and as the salary-relief goalie whose ceiling does not require his team to win: the only crease in these games that pays its 20 in a loss.</div></details>
+<details><summary><b>Punts</b><span class="tier">SALARY RELIEF</span></summary><div class="leafbody">Cam York (PHI, $3,600): 5.07 points a game from shots and blocks, 1.41 per $1,000, the best punt in the game; he defends against the slate's second-highest shot rate, which is the block-volume recipe. Jonas Brodin (MIN, $4,200): 5.19 a game, 2.06 blocks a night. Ryan Hartman (MIN, $4,100): half a point a game plus 5.10 of floor. Owen Tippett (PHI, $4,400): 2.66 shots a game and real scoring.</div></details>
+
+<div class="foot"><b>What this game must give a top 1% lineup:</b> one convex boom entry with genuine shared-goal capture, a capped-ceiling favourite goalie, or the slate's only loss-proof goalie leaf. It is the richest of the four 5.5 games and the only one asked for skaters (bar: <a href="../history.html">192 for the top 1%, about 242 to win</a>). <b>T-60 items:</b> Vladar verified on the boxscore flag like everyone else, Wallstedt's confirmation, and York's minutes at warmups, because the punt's whole basis is his deployment. Source: deep/14-trees-grind-games.md, with the 4:00 PM sweep (deep/15) applied.</div>
+
+</div>
+</body>
+</html>

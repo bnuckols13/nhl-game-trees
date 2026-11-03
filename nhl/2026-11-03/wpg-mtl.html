@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Winnipeg at Montreal — Game Tree, Grind Pass</title>
+<link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+<div class="wrap">
+
+<a class="backlink" href="index.html">&larr; Slate index, November 3, 2026</a>
+
+<div class="hd">
+<div class="kick">Game tree &middot; grind pass &middot; goalies, punts, one convex look</div>
+<h1>The slate's cleanest goalie script: the crease in the best form against the coldest offence on the slate</h1>
+<div class="sub">Puck drop 7:00 PM ET. Total 5.5. Implied goals: Montreal 3.14, Winnipeg 2.36, the lowest team number on the slate. Win probability, market: Montreal 63.2%. Winnipeg has scored eight goals in its last five, lost Morrissey this afternoon, and still has not named its goalie. Built at grind depth: goal distributions are Poisson at the market means with the realized record printed beside them, and goalie branches are a coarse Monte Carlo whose levels run upper-leaning.</div>
+</div>
+
+<h2>Level 1 &middot; How many goals, and the scripts that matter</h2>
+<table>
+<tr><th>Team</th><th class="num">Scores 4+, market</th><th class="num">Scores 4+, realized</th><th>Note</th></tr>
+<tr><td><b>Montreal</b></td><td class="num">38.4%</td><td class="num">7 of 13 games</td><td>A metronome: 2 or more in every parsed game, 4 or more in seven, never above five</td></tr>
+<tr><td><b>Winnipeg</b></td><td class="num">21.3%</td><td class="num">14.3%</td><td>2.43 goals a game realized, capped at three in 10 of 14; the market is kinder to Winnipeg than its form is</td></tr>
+</table>
+<div class="script"><div class="top"><div class="p">35.8%</div><div class="nm">The Fowler grind, total 4 or fewer in a Montreal win</div></div><div class="pays">Inside the grind mass sits the slate's cleanest goalie script: <span class="dim">a 2.36-implied offence, on the road, missing its top defenseman, against the best form in any crease tonight.</span></div><div class="pbar"><i style="width:35.8%"></i></div></div>
+<div class="script"><div class="top"><div class="p">17.3%</div><div class="nm">Close high total</div></div><div class="pays">Requires a Winnipeg scoring night <span class="dim">its last five games do not support.</span></div><div class="pbar"><i style="width:17.3%"></i></div></div>
+<div class="script"><div class="top"><div class="p">14.8%</div><div class="nm">Montreal rout</div></div><div class="pays">Pays Montreal's first line plus Hutson at even strength. <span class="dim">There is no power play version: Montreal's power play is 9.5%, last in the league, with three power play goals all season.</span></div><div class="pbar"><i style="width:14.8%"></i></div></div>
+
+<h2>Goalies</h2>
+<table>
+<tr><th>Goalie</th><th class="num">Mean</th><th class="num">Median</th><th class="num">P(20+)</th><th class="num">P(28.8+)</th><th>Status</th></tr>
+<tr><td><b>Fowler (MTL, $7,800)</b></td><td class="num">18.5</td><td class="num">19.2</td><td class="num"><b>.496</b></td><td class="num"><b>.190</b></td><td><span class="tier live">Confirmed</span></td></tr>
+<tr><td>Winnipeg starter, either</td><td class="num">12.7</td><td class="num">10.4</td><td class="num">.303</td><td class="num">.111</td><td><span class="tier">Unresolved</span></td></tr>
+</table>
+<p class="small">Fowler is the best goalie branch in the six grind and secondary games: a 49.6% chance of 20 or more and a 19.0% chance of the 28.8 the median GPP winner gets from his goalie, on the slate's best measured form, eight starts, seven wins, 25.6 saves a game, 1.88 goals against, two shutouts. At the market mean alone, Winnipeg scores one or fewer in 31.7% of worlds and is shut out in 9.4%, before any form adjustment, and its realized rate sits below the mean the market gave him. Morrissey's absence, settled in the afternoon sweep and absent from the morning file entirely, upgrades all of this directionally: Winnipeg's thinnest offence lost its top defenseman. Winnipeg's own crease is the last open one in these games, Skinner or Stevenson after the coach ruled Daws out on the record, and it is not playable either way: a 36.8% win probability caps the win term and Montreal does not shoot enough to rescue a loss. The branch matters only as Montreal confidence, Skinner being the full-confidence version.</p>
+
+<h2>The leaves</h2>
+<details><summary><b>GL-3 &middot; Fowler, goalie-first</b><span class="tier core">CORE</span></summary><div class="leafbody">The best goalie leaf in the six games and the first name in any lineup that does not take its goalie from a stack game. One of the two core goalie leaves in the set, with Dallas's Oettinger, and the only one whose script does not require its own team to boom.</div></details>
+<details><summary><b>Montreal's one line</b><span class="tier">SECONDARY</span></summary><div class="leafbody">Caufield ($6,900) plus Hutson ($5,800), with Slafkovsky ($5,900) for the three-man. Measured capture on Montreal's even-strength and extra-attacker goals: the set holds 32.7% of the points, and Hutson is the hub, ahead of Caufield and Slafkovsky in participation. The caveat is printed with it: Suzuki, who is out, shared six goals with Hutson in the sample, and his capture redistributes to the dressed unit, Newhook centering the first line, which cuts both ways and is stated, not resolved. Dach leaning out changes the power play's fifth seat; with three power play goals all season, the even-strength script does not move.</div></details>
+<details><summary><b>Punts</b><span class="tier">SALARY RELIEF</span></summary><div class="leafbody">Kreider (MTL, $4,500): 0.64 points a game with power play points pooled. Ferraro (WPG, $3,900): 4.85 points a game from shots and blocks, 1.87 blocks a night; in a game Montreal should control, Winnipeg defends in volume, and the measured block pattern in lopsided states keeps his floor intact even in a Montreal rout.</div></details>
+<details><summary><b>Convex boom</b><span class="tier">NONE</span></summary><div class="leafbody">Winnipeg's power play unit is the most concentrated unit measured in these six games, taking 90.5% of the points on its power play goals and paying all three members on five of seven, on a thin count of seven. But Winnipeg projects roughly one power play goal tonight, and one power play goal paying three skaters is 28 to 36 points of total unit value, not a lineup-carrying branch. Concentration without volume is not a leaf. No entry.</div></details>
+
+<div class="foot"><b>What this game must give a top 1% lineup:</b> the goalie slot at its highest probability on the slate, and optionally Montreal's one even-strength line as a secondary engine (bar: <a href="../history.html">192 for the top 1%, about 242 to win</a>). <b>T-60 items:</b> Winnipeg's starter flag, the last open crease in these games; Fowler's confirmation on the flag; Dach's final status; Mercer's status. Source: deep/14-trees-grind-games.md, with the 4:00 PM sweep (deep/15) applied.</div>
+
+</div>
+</body>
+</html>

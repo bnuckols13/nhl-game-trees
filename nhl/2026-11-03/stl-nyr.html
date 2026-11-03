@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>St. Louis at NY Rangers — Game Tree, Grind Pass</title>
+<link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+<div class="wrap">
+
+<a class="backlink" href="index.html">&larr; Slate index, November 3, 2026</a>
+
+<div class="hd">
+<div class="kick">Game tree &middot; grind pass &middot; goalies, punts, one convex look</div>
+<h1>A grind game whose only core-shaped asset is the home goalie, in a game where even the saves are thin</h1>
+<div class="sub">Puck drop 7:00 PM ET. Total 5.5. Implied goals: NY Rangers 2.81, St. Louis 2.69. Win probability, market: Rangers 52.2%. One model dissents toward St. Louis at 59.6%; the market governs and the dissent is flagged, not followed. This game was built at grind depth: its job in the portfolio is the goalie slot and cheap defenseman floors, not a stack. Goal distributions are Poisson at the market means; goalie branches are a coarse Monte Carlo off the same engine family, and their levels run upper-leaning, so read the chances with about three points of tolerance and trust the rankings.</div>
+</div>
+
+<h2>Level 1 &middot; How many goals, and the scripts that matter</h2>
+<table>
+<tr><th>Team</th><th class="num">Scores 4+</th><th class="num">Scores 5+</th><th>Note</th></tr>
+<tr><td><b>NY Rangers</b></td><td class="num">31.0%</td><td class="num">15.4%</td><td>Shoots a slate-low 24.9 a game; even the saves path is thin</td></tr>
+<tr><td><b>St. Louis</b></td><td class="num">28.4%</td><td class="num">13.6%</td><td>Both teams' realized scoring runs above these means; the market's 5.5 is the price, not an error this page corrects</td></tr>
+</table>
+<div class="script"><div class="top"><div class="p">35.8%</div><div class="nm">The grind, total 4 or fewer</div></div><div class="pays">The game's centre of mass. <span class="dim">Both penalty kills are top ten, St. Louis at 83.3% and the Rangers at 89.1%, so the power play path into a boom is blocked. This script pays only the winning goalie.</span></div><div class="pbar"><i style="width:35.8%"></i></div></div>
+<div class="script"><div class="top"><div class="p">18.4%</div><div class="nm">Close high total, 7 or more</div></div><div class="pays">Needs both first lines at even strength. <span class="dim">The only boom shape available, and neither penalty kill cooperates with it.</span></div><div class="pbar"><i style="width:18.4%"></i></div></div>
+<div class="script"><div class="top"><div class="p">9.5%</div><div class="nm">Rangers rout</div></div><div class="pays">Garand plus first-line scraps.</div><div class="pbar"><i style="width:9.5%"></i></div></div>
+<div class="script"><div class="top"><div class="p">8.0%</div><div class="nm">St. Louis rout</div></div><div class="pays">The dissenting model's world, <span class="dim">priced by the market as the least likely named script in the game.</span></div><div class="pbar"><i class="v" style="width:8.0%"></i></div></div>
+
+<h2>Goalies <span>&mdash; the slot this game exists to fill</span></h2>
+<table>
+<tr><th>Goalie</th><th class="num">Mean</th><th class="num">P(20+)</th><th class="num">P(28.8+)</th><th>Status</th></tr>
+<tr><td><b>Garand (NYR, $7,500)</b></td><td class="num">15.7</td><td class="num"><b>.407</b></td><td class="num">.146</td><td><span class="tier live">Confirmed</span></td></tr>
+<tr><td>Hofer (STL, $7,400)</td><td class="num">14.5</td><td class="num">.369</td><td class="num">.129</td><td><span class="tier live">Confirmed</span></td></tr>
+</table>
+<p class="small">The winning goalie in this slate's history scores a median 28.8, the column that decides whether a crease can anchor a winning lineup. Garand's path is a win plus two or fewer against, and St. Louis scores two or fewer in 49.8% of worlds at the market mean; his measured form is thin, nine starts this season, so the branch is shape, not form. Hofer's form is better, a .916 across ten starts, but the road underdog's win term caps him, and Parayko's confirmed absence removes St. Louis's top shot-blocker, 2.20 blocks a game, from in front of him: a small negative on the quality he faces, partly offset by the Rangers being the slate's lowest-volume shooting team anyway. The 4:00 PM sweep also moved St. Louis's lines, Johnston returning, Holloway back to the first line and Neighbours down to the third, with Broberg absorbing Parayko's minutes and the power play point; none of it changes this game's job.</p>
+
+<h2>The leaves</h2>
+<details><summary><b>GL-1 &middot; Garand, goalie-first</b><span class="tier core">CORE-SHAPED</span></summary><div class="leafbody">Garand plus the punt defensemen below, with the skaters imported from the slate's stack games. This game's only core-shaped leaf, because it is the only asset here whose price does not depend on a boom that two top-ten penalty kills are built to prevent.</div></details>
+<details><summary><b>Punts &middot; the defenseman floors</b><span class="tier">SALARY RELIEF</span></summary><div class="leafbody">Braden Schneider (NYR, $3,600): 4.70 points a game from shots and blocks, 1.31 per $1,000, the best floor in the game. Brandon Carlo (STL, $3,700): 4.48 a game, and his minutes and block load rise with Parayko out. Matthew Robertson (NYR, $3,200): 3.53 a game, the cheapest legal floor in the game. All three are floor slots under the standing rule: their 20+ path is one point plus a normal night, never the floor alone.</div></details>
+<details><summary><b>Convex boom</b><span class="tier">NONE</span></summary><div class="leafbody">St. Louis's realized scoring is livelier than its price, but at 2.69 implied goals against an 89.1% kill there is no measured branch in this game worth an entry. The honest convex answer is sometimes no entry, and it is here.</div></details>
+
+<div class="foot"><b>What this game must give a top 1% lineup:</b> a goalie, or two cheap defenseman floors, and nothing else. Lineups that ask it for skaters are asking the wrong game (bar: <a href="../history.html">192 for the top 1%, about 242 to win</a>). <b>T-60 items:</b> both starter flags, and Carlo's minutes confirming the punt's basis with Parayko out. Source: deep/14-trees-grind-games.md, with the 4:00 PM sweep (deep/15) applied.</div>
+
+</div>
+</body>
+</html>

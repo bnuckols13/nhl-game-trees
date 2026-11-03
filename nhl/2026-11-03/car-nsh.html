@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Carolina at Nashville — Game Tree v2</title>
+<link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+<div class="wrap">
+
+<a class="backlink" href="index.html">&larr; Slate index, November 3, 2026</a>
+
+<div class="hd">
+<div class="kick">Game tree &middot; version 2 &middot; built from the plays, then simulated</div>
+<h1>There is no Carolina script to bet, only a Carolina position to hold, and the dog's power play is the other engine</h1>
+<div class="sub">Puck drop 8:00 PM ET. Total 6.5 when the build inputs froze, since moved to 6.0 on FanDuel's line; implied goals Carolina 3.63, Nashville 2.87. Win probability: Carolina about 63% by the market, 64.9% in the simulation, which runs about two points hot and is noted where it matters. Method: every goal in two seasons of play-by-play for both teams, capture measured on shared goals, then 25,000 simulated games with the backtest haircuts applied.</div>
+</div>
+
+<div class="banner"><span class="bt">Market move, flagged by the tree itself</span><br>
+FanDuel's total for this game dropped from 6.5 to 6.0 after the build inputs froze (line as carried at 12:52 PM ET). The tree is priced on the 6.5 inputs. If the 6.0 governs at lock, scale both teams' means down by roughly a quarter goal: boom scripts soften by about three to five points each, grind scripts fatten, and every ranking on this page stands. Re-running on the moved line is a T-60 decision for the desk, not a silent edit.</div>
+
+<h2>Level 1 &middot; How many goals</h2>
+<table>
+<tr><th>Team</th><th class="num">Scores 4+</th><th class="num">Scores 5+</th><th>Goal mix, measured from the play-by-play</th></tr>
+<tr><td><b>Carolina</b></td><td class="num">51.7%</td><td class="num">30.7%</td><td>Even strength 67.5% &middot; power play 20.3% &middot; shorthanded 3.4%, the build's only real shorthanded tail &middot; empty net 5.6%</td></tr>
+<tr><td><b>Nashville</b></td><td class="num">32.4%</td><td class="num">15.8%</td><td>Even strength 63.6% &middot; power play 24.0%, the largest power play share of the four built teams &middot; empty net 6.4%</td></tr>
+</table>
+<div class="note">Carolina is the flattest scoring team in the build: 3.42 to 3.60 goals per 60 in every score state, on 29 to 35 shots per 60 in every state. There is no script in which Carolina stops shooting; there are only scripts in which Nashville's goalie stops them. That flatness is why Carolina's win mass splits almost evenly across the rout, close, mid and grind scripts below instead of concentrating, and why Saros's save floor is script-independent while his 20+ outcomes are not. Nashville's counterweight is its power play: an expected 0.71 power play goals tonight against Carolina's 0.50, because Nashville's 88.9% kill is the wall in this game. It holds Carolina's power play to half a goal despite all that volume, which is the measured reason Carolina's stack here is an even-strength stack, not a power play stack. Lenses: total 8 or more in 31.0% of sims, total 4 or fewer in 20.1%, both teams 3 or more in 39.9%.</div>
+
+<h2>The ten scripts <span>&mdash; every price carries about 3 points of tolerance; Carolina prices sit at the friendly edge</span></h2>
+
+<div class="script"><div class="top"><div class="p">18.2%</div><div class="nm">Carolina rout</div><div class="sc">CAR 6.1 &middot; NSH 2.2 avg</div></div><div class="pays">The top six push past 100 raw; Kochetkov about 24. <span class="dim">Tied for the game's largest script, which is the flatness point made numeric.</span></div><div class="pbar"><i style="width:18.2%"></i></div></div>
+
+<div class="script"><div class="top"><div class="p">18.1%</div><div class="nm">Carolina close win, high total</div><div class="sc">CAR 4.9 &middot; NSH 3.7 avg</div></div><div class="pays">Both engines live at once. <span class="dim">Nashville's power play unit pays even in a loss here, which is what makes this script a two-sided construction.</span></div><div class="pbar"><i style="width:18.1%"></i></div></div>
+
+<div class="script"><div class="top"><div class="p">12.2%</div><div class="nm">Carolina win, mid total</div><div class="sc">CAR 3.4 &middot; NSH 2.2 avg</div></div><div class="pays">One unit plus the goalie. <span class="dim">No dedicated leaf, by the standing doctrine.</span></div><div class="pbar"><i style="width:12.2%"></i></div></div>
+
+<div class="script"><div class="top"><div class="p">11.2%</div><div class="nm">Carolina grind</div><div class="sc">CAR 2.4 &middot; NSH 0.9 avg</div></div><div class="pays">A goalie script: <span class="dim">Kochetkov clears 20 in nearly every one of these worlds, and Carolina defends a lead by blocking at the highest rate measured in the build, the floor under Slavin and Walker here.</span></div><div class="pbar"><i style="width:11.2%"></i></div></div>
+
+<div class="script"><div class="top"><div class="p">10.9%</div><div class="nm">Nashville close win, high total</div><div class="sc">CAR 3.7 &middot; NSH 4.9 avg</div></div><div class="pays">Nashville's power play detonates and the Carolina bring-back stays live. <span class="dim">The largest of Nashville's win scripts, built on its trailing rate, its best state by a wide margin.</span></div><div class="pbar"><i class="v" style="width:10.9%"></i></div></div>
+
+<div class="script"><div class="top"><div class="p">7.8%</div><div class="nm">Nashville win, mid total</div><div class="sc">CAR 2.2 &middot; NSH 3.3 avg</div></div><div class="pays">A Nashville power play shape at about 52. <span class="dim">No dedicated leaf.</span></div><div class="pbar"><i class="v" style="width:7.8%"></i></div></div>
+
+<div class="script"><div class="top"><div class="p">7.5%</div><div class="nm">Nashville grind</div><div class="sc">CAR 0.9 &middot; NSH 2.3 avg</div></div><div class="pays">Saros's node: <span class="dim">his best 20+ shape among the scripts Nashville wins.</span></div><div class="pbar"><i class="v" style="width:7.5%"></i></div></div>
+
+<div class="script"><div class="top"><div class="p">6.4%</div><div class="nm">Nashville rout</div><div class="sc">CAR 2.1 &middot; NSH 6.0 avg</div></div><div class="pays">The bifurcation. <span class="dim">Nashville's power play unit at about 130 raw in the richest single-game contribution measured in today's build. One to two entries, never naked.</span></div><div class="pbar"><i class="v" style="width:6.4%"></i></div></div>
+
+<div class="script"><div class="top"><div class="p">5.2%</div><div class="nm">Carolina blowout, low total</div><div class="sc">CAR 4.0 &middot; NSH 0.9 avg</div></div><div class="pays">Kochetkov plus a cheap Carolina shape, <span class="dim">reached through the pulled-goalie path.</span></div><div class="pbar"><i style="width:5.2%"></i></div></div>
+
+<div class="script"><div class="top"><div class="p">2.4%</div><div class="nm">Nashville blowout, low total</div><div class="sc">CAR 0.8 &middot; NSH 4.0 avg</div></div><div class="pays">Saros plus the Nashville power play at about 57. <span class="dim">The rarest named world in the game.</span></div><div class="pbar"><i class="v" style="width:2.4%"></i></div></div>
+
+<h2>Level 2 &middot; Capture, from the plays</h2>
+<div class="note">Nashville's power play unit is the most concentrated capture measured in the build: it pays all three participants on 35 of its 68 power play goals, 51%, where the correlation doctrine's other units pay two. When Nashville's power play scores twice, a stack of it does not partially cash; it detonates. The honest limit sits beside it: 14 of those 68 goals paid no member of the unit at all, scored while it was changing or by the second unit. Nashville's assist network is the same story told as pairs, O'Reilly with Forsberg 34 shared goals, Stamkos with O'Reilly 33, Stamkos with Josi 29: five of its six heaviest pairs are power play members paired with each other. That is what a power play team looks like in the record. Carolina inverts the usual pattern: its second line's even-strength share, 21.7%, beats its first line's 19.2%, and pays two members 32 times to the first line's 20. Carolina's even-strength stack is its second line as much as its first.</div>
+<table>
+<tr><th>Unit</th><th class="num">Cost</th><th class="num">Median, haircut</th><th class="num">p90</th></tr>
+<tr><td>Nashville PP1, five skaters</td><td class="num">$31,400</td><td class="num">70 to 75</td><td class="num">142.4</td></tr>
+<tr><td>Carolina top six, both lines</td><td class="num">$35,100</td><td class="num">54 to 57</td><td class="num">109.8</td></tr>
+<tr><td>Carolina PP1</td><td class="num">$30,300</td><td class="num">49 to 52</td><td class="num">101.6</td></tr>
+<tr><td>Carolina core four, PP1 forwards</td><td class="num">$25,000</td><td class="num">41 to 44</td><td class="num">87.2</td></tr>
+<tr><td>Nashville first line</td><td class="num">$17,600</td><td class="num">32 to 34</td><td class="num">73.6</td></tr>
+<tr><td>Carolina second line</td><td class="num">$17,900</td><td class="num">27 to 29</td><td class="num">63.7</td></tr>
+</table>
+<p class="small">Read the Nashville unit with its construction note: it is Nashville's five best players, so it accumulates even-strength points on top of power play capture, and even after the haircut its median is the largest single-unit median on either built tree. The cap holds a lineup to four of the five; Forsberg, O'Reilly, Stamkos and Josi at $26,700 is the efficient four. Deployment flags: Jarvis skates on Carolina's third line tonight against a capture base built in top-six roles, the file's most role-sensitive Carolina price. Wright centers Nashville's second line three days after arriving from Seattle, priced from priors and linemate gravity, the softest skater price in the file. Marchessault is a fourth-line even-strength winger and a first-unit power play forward: do not pay a power play price for his even-strength minutes. Carolina's lineup is the team's own published projection, unchanged from November 1, with Hall and Staal out.</p>
+<table>
+<tr><th>Key players</th><th class="num">Mean</th><th class="num">P(20+) all sources</th><th class="num">P(20+) points only</th></tr>
+<tr><td>Forsberg (NSH, $6,800)</td><td class="num">23.4</td><td class="num"><b>.565</b></td><td class="num">.366</td></tr>
+<tr><td>O'Reilly (NSH, $6,900)</td><td class="num">21.5</td><td class="num"><b>.498</b></td><td class="num">.354</td></tr>
+<tr><td>Stamkos (NSH, $6,800)</td><td class="num">19.4</td><td class="num"><b>.426</b></td><td class="num">.288</td></tr>
+<tr><td>Josi (NSH, $6,200)</td><td class="num">17.3</td><td class="num"><b>.349</b></td><td class="num">.150</td></tr>
+<tr><td>Aho (CAR, $7,200)</td><td class="num">14.9</td><td class="num"><b>.284</b></td><td class="num">.204</td></tr>
+<tr><td>Svechnikov (CAR, $6,000)</td><td class="num">13.6</td><td class="num"><b>.246</b></td><td class="num">.167</td></tr>
+<tr><td>Ehlers (CAR, $5,800)</td><td class="num">13.5</td><td class="num"><b>.236</b></td><td class="num">.157</td></tr>
+<tr><td>Marchessault (NSH, $4,700)</td><td class="num">10.4</td><td class="num"><b>.137</b></td><td class="num">.085</td></tr>
+</table>
+<p class="small">The asymmetry is the game's signature. Nashville's stars carry higher individual 20+ rates than Carolina's despite the lower team total, because Nashville's offense concentrates in five skaters while Carolina's spreads across three lines: inside Nashville rout worlds, Forsberg clears 20 at 86.5%, O'Reilly at 87.7%, Stamkos at 83.9%. Inside Carolina rout worlds, no Carolina skater is better than a coin flip, Aho leading at 51.2%. Carolina's stack wins on breadth; Nashville's on concentration; the stack is the Carolina bet, not the player. Josi is the build's only defenseman whose points-only chance, .150, is a real fraction of his all-sources figure. The hidden-points floors: Slavin $4,400 at 1.20 per $1,000, Walker $5,100 at 1.19, Josi at 1.08 while also being a capture asset, Miller at 1.06. Nikishin tops the raw rate list and is excluded: he is not dressing.</p>
+
+<h2>Goalies <span>&mdash; distributions from inside the simulation</span></h2>
+<table>
+<tr><th>Goalie</th><th class="num">Mean</th><th class="num">Median</th><th class="num">p90</th><th class="num">P(20+)</th><th class="num">P(30+)</th><th>Status</th></tr>
+<tr><td><b>Kochetkov (CAR, $7,800)</b></td><td class="num">16.6</td><td class="num">18.4</td><td class="num">31.2</td><td class="num"><b>.464</b></td><td class="num">.124</td><td><span class="tier">Likely, strong</span></td></tr>
+<tr><td>Saros (NSH, $7,000)</td><td class="num">13.3</td><td class="num">11.2</td><td class="num">31.2</td><td class="num">.318</td><td class="num">.116</td><td><span class="tier">Likely, dissent</span></td></tr>
+<tr><td>Annunen branch (NSH net)</td><td class="num">14.5</td><td class="num">14.4</td><td class="num">28.8</td><td class="num">.301</td><td class="num">.082</td><td><span class="tier">Branch</span></td></tr>
+<tr><td>Bussi branch (CAR net)</td><td class="num">15.5</td><td class="num">16.0</td><td class="num">28.0</td><td class="num">.361</td><td class="num">.069</td><td><span class="tier">Branch</span></td></tr>
+</table>
+<p class="small">Kochetkov, named on Carolina's own lineup page and winner of ten straight starts, is a strong favourite goalie at .464, a tier below Tampa's Vasilevskiy (.573) because Nashville shoots and scores enough at home to keep his goals-against term live. Saros carries a correction this file owes the morning sketch, which called him the slate's cleanest goalie-volume script, 35 or more saves in play without needing a win. The simulation agrees on the floor, his save volume is script-independent because Carolina always shoots, and disagrees on the payoff: the joint event the sketch promised, Saros at 20+ in a Nashville loss, prices at 2.1%. Without the 12-point win he needs roughly 33 saves with at most two against, and Carolina's flat scoring makes the two-or-fewer loss the rare version of a Nashville loss. Play Saros as a Nashville goalie, not as a free-standing volume asset. Branches: Annunen for Saros is near-neutral for skaters and moves the slot to .301, but it voids the Saros sprinkle below; Bussi for Kochetkov adds about 0.6 goals to Nashville's mean and fattens every Nashville leaf while the Kochetkov leaves die. Saros versus Annunen is the game's biggest T-60 item, because this tree's leaf structure leans on the crease more than most.</p>
+
+<h2>Level 3 &middot; The leaves <span>&mdash; contribution measured as this game's top four skaters plus its best goalie, at the median</span></h2>
+
+<details><summary><b>LF-CAR1 &middot; Carolina scores 4+ and its PP1 produces</b><span class="tier core">CORE &middot; 46.1%</span></summary><div class="leafbody">The game's modal boom. It survives Nashville's kill because Carolina's power play still converts its share while the even-strength game does the heavy lifting. In its worlds the game hands a lineup 5.46 players at 20+ on average and 142.3 points of stack-plus-goalie return, the same engine class as Tampa's core leaf at a slightly lower rate. The rosterable shape respects the cap: the core four power play forwards at $25,000, or three of them plus Gostisbehere, with Kochetkov, never five skaters from the unit.</div></details>
+
+<details><summary><b>LF-CAR2 &middot; Carolina scores 4+ and its top six produce</b><span class="tier">SECONDARY &middot; 34.8%</span></summary><div class="leafbody">The same boom read through even strength, and at 5.77 the highest average 20+ count on the tree: the truer Carolina shape against an 88.9% kill. It overlaps LF-CAR1 heavily by design; together they say Carolina exposure should be built line-agnostic, power play forwards plus the second line, rather than as a single-unit stack. Do not count the two leaves as independent bets when sizing.</div></details>
+
+<details><summary><b>LF-NSH3 &middot; Nashville wins and its PP1 produces</b><span class="tier">SECONDARY &middot; 34.2%</span></summary><div class="leafbody">The fattest dog leaf on either built tree. A +158 home team whose win worlds carry its power play unit past 50 at a 34.2% joint rate is a concentration gift: the unit is five players for $31,400 and the efficient four for $26,700, and the field will hold a fraction of it. This leaf and LF-CAR1 are the game's two engines and they are close to mutually exclusive, which is exactly what a book of bets wants.</div></details>
+
+<details><summary><b>LF-GRIND &middot; The grinds, winning goalie at 20+</b><span class="tier">SECONDARY &middot; 18.5%</span></summary><div class="leafbody">The winning goalie clears 20 in essentially every grind world, .185 of the .187 combined script mass. It buys one slot in two directions, Kochetkov's grind or Saros's, and the skaters come from other games. A slot purchase, not an engine.</div></details>
+
+<details><summary><b>LF-NSH2 &middot; Nashville scores 2+ power play goals and wins</b><span class="tier">SECONDARY &middot; 9.5%</span></summary><div class="leafbody">The power play blowup, with the tree's second-highest combined median at 161.3, because a two-power-play-goal Nashville win is almost definitionally a power play stack night: 35 of 68 of the unit's goals paid all three participants.</div></details>
+
+<details><summary><b>LF-NSH4 &middot; Nashville rout, the bifurcation</b><span class="tier">CONVEX &middot; 6.4%</span></summary><div class="leafbody">Nashville routing the league's best defensive team happens in 6.4% of worlds and pays the highest combined median measured in today's build, 169.7, with five 20+ players. One to two entries, never naked: its anchor slots come from the slate's other games' cores, since a Carolina stack cannot share the lineup.</div></details>
+
+<details><summary><b>LF-CAR3 &middot; Jarvis leads a Carolina boom</b><span class="tier">CONVEX &middot; 5.6%</span></summary><div class="leafbody">The third-line demotion branch. Not rare enough to be a lottery ticket and too thin to be core; its real use is permission to hold Jarvis inside Carolina stacks without apologizing for the third-line label, because his network, 38 shared goals with Aho, says the demotion is an even-strength minutes fact, not a capture exile. One entry class.</div></details>
+
+<details><summary><b>LF-NSH5 &middot; Josi leads a Nashville win</b><span class="tier">CONVEX &middot; 3.8%</span></summary><div class="leafbody">The strongest defenseman-led branch in the build, and already partially owned by any Nashville power play construction that includes him. No separate entries beyond that overlap.</div></details>
+
+<details><summary><b>LF-NSH1 &middot; Saros at 20+ in a Nashville loss</b><span class="tier">CONVEX, DEMOTED &middot; 2.1%</span></summary><div class="leafbody">The morning's volume-steal headline, priced as a joint event at 2.1%: in 98% of worlds this leaf's goalie returns under 20 in a loss and the slot is spent. One sprinkle at most, only in a lineup whose skaters do not need the goalie slot. Void entirely if Annunen starts.</div></details>
+
+<div class="foot"><b>What this game must give a top 1% lineup:</b> its core worlds hand a lineup about 142 to 145 points and five to six of the six 20+ slots a 242 winner holds (see <a href="../history.html">how NHL GPPs are won</a>). Holding LF-CAR1 and LF-NSH3 as the two engines owns both directions of the game's real probability mass; the grind and the steal are slot purchases, not engines. Its convex world, the Nashville rout at 169.7, is the single richest game contribution measured in today's build.<br><br>
+<b>How far to trust it:</b> the market total move to 6.0 is the file's largest staleness item, flagged at the top of this page; rankings stand under it and boom prices soften. Carolina's simulated win probability runs about two points hot against the market. Carolina's power play goal outputs are the softest numbers in the file, its calibration multiplier of 0.69 being the furthest from 1.0 in the build. Wright's price is priors and linemate gravity. Unit and player medians are upper-leaning before the printed haircuts, and capture is event-based with the standing blind spot. T-60 items: Saros or Annunen, Kochetkov's confirmation, Wright's actual deployment, Marchessault's lines, and the total. Source: deep/11-tree-CAR-NSH.md.</div>
+
+</div>
+</body>
+</html>
